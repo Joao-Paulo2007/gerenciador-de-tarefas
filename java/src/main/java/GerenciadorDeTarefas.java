@@ -1,9 +1,11 @@
+import br.com.Tarefa;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class GerenciadorDeTarefas {
-    private List<Tarefas> tarefas;
+    private List<Tarefa> tarefas;
     private Scanner scanner;
 
     public GerenciadorDeTarefas() {
@@ -50,7 +52,7 @@ public class GerenciadorDeTarefas {
     private void adicionarTarefa() {
         System.out.print("Digite a descrição da nova tarefa: ");
         String descricao = scanner.nextLine();
-        Tarefas novaTarefa = new Tarefas(descricao);
+        Tarefa novaTarefa = new Tarefa(descricao);
         tarefas.add(novaTarefa);
         System.out.println("Tarefa adicionada com sucesso!");
     }
@@ -86,3 +88,4 @@ public class GerenciadorDeTarefas {
         app.iniciar();
     }
 }
+
